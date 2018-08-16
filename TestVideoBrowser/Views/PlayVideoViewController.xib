@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PlayVideoViewController">
+            <connections>
+                <outlet property="videoView" destination="ZfT-rO-5Tg" id="7n4-Kw-IAL"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZfT-rO-5Tg">
+                    <rect key="frame" x="0.0" y="144" width="414" height="448"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BzO-LV-5Qc">
+                    <rect key="frame" x="20" y="71" width="34" height="30"/>
+                    <state key="normal" title="Back"/>
+                    <connections>
+                        <action selector="backAction:" destination="-1" eventType="touchUpInside" id="pzK-5T-HXo"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HyB-PY-MlI">
+                    <rect key="frame" x="187" y="647" width="40" height="30"/>
+                    <state key="normal" title="Share"/>
+                    <connections>
+                        <action selector="shareBtnPressed:" destination="-1" eventType="touchUpInside" id="27Y-Y5-v7W"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="BzO-LV-5Qc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leadingMargin" id="3MQ-Uj-I67"/>
+                <constraint firstItem="HyB-PY-MlI" firstAttribute="top" secondItem="ZfT-rO-5Tg" secondAttribute="bottom" constant="55" id="9wf-Hi-0gK"/>
+                <constraint firstItem="ZfT-rO-5Tg" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="A77-oY-f3I"/>
+                <constraint firstItem="ZfT-rO-5Tg" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="144" id="A90-F0-Qvq"/>
+                <constraint firstItem="ZfT-rO-5Tg" firstAttribute="top" secondItem="BzO-LV-5Qc" secondAttribute="bottom" constant="43" id="Mxa-ed-han"/>
+                <constraint firstItem="ZfT-rO-5Tg" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="auo-7V-ZLP"/>
+                <constraint firstItem="ZfT-rO-5Tg" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="bqf-RD-eYI"/>
+                <constraint firstItem="HyB-PY-MlI" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="yVv-I4-REp"/>
+            </constraints>
+            <point key="canvasLocation" x="31.5" y="58.5"/>
+        </view>
+    </objects>
+</document>
